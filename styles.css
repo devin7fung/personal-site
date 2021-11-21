@@ -115,7 +115,7 @@ html {
 
 .parallaxinner {
   background-image: url(./public/goldengatebridge.jpeg);
-  background-position: bottom;
+  background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +126,7 @@ html {
 
 .swdev {
   width: 15%;
+  border: 8px solid rgba(255, 255, 255, 0.5);
 }
 
 .first {
