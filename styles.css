@@ -1,0 +1,455 @@
+/* background */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pagelayout {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.navigation {
+  width: 16%;
+  height: 100%;
+  padding: 30px 3%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: linear-gradient(to bottom, #48e689, #5b44df);
+  z-index: 100;
+}
+
+.logowrap {
+  position: relative;
+  left: -2.4vw;
+  background-color: #041230;
+  padding-bottom: 0px;
+  padding-right: 14.5vw;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.line {
+  position: relative;
+  left: -30%;
+  width: 160%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 30px;
+}
+
+.logowrap img {
+  width: 14.5vw;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation li {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navigation a:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: #e3872d;
+  top: 14px;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #e3872d;
+  text-decoration: none;
+}
+
+.navigation a:hover:before {
+  width: 35px;
+}
+
+.navigation a:hover,
+.navigation a:active,
+.navigation a.active {
+  color: white;
+}
+
+.socialmedia {
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.socialmedia ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.parallax {
+  position: relative;
+  top: 0;
+  left: 15%;
+}
+
+.parallaxinner {
+  background-image: url(/public/goldengatebridge.jpeg);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 85%;
+  padding: 18% 0;
+  text-align: center;
+}
+
+.swdev {
+  width: 15%;
+}
+
+.first {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.last {
+  color: orange;
+}
+
+/* content */
+/* ----------------------ABOUT ME---------------------------- */
+.maincontent {
+  position: relative;
+  left: 15%;
+  width: 85%;
+  z-index: 1;
+  background-color: white;
+}
+
+.blue {
+  padding: 5% 10%;
+  background-color: #f6f7fd;
+  display: flex;
+}
+
+.white {
+  padding: 5% 10%;
+  display: flex;
+}
+
+.leftcontent {
+  width: 30%;
+  height: 100%;
+}
+
+.rightcontent {
+  width: 70%;
+  padding: 5% 10% 10% 10%;
+  height: 100%;
+}
+
+.titleportion {
+  font-size: 4rem;
+  margin: 0;
+  position: relative;
+}
+
+.titleportion div {
+  font-size: 1rem;
+  margin-bottom: 20%;
+}
+
+.titleportion::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 100%;
+  background: linear-gradient(to bottom, #48e689, #5b44df);
+  left: -20px;
+}
+
+.aboutmegif {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.aboutme .rightcontent p {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.aboutme .rightcontent p strong {
+  color: #48e689;
+}
+
+.personal-info {
+  display: flex;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  padding: 5% 0;
+}
+
+.personal-info ul {
+  list-style: none;
+}
+
+.personal-info .personalleft {
+  width: 50%;
+}
+
+.personal-info .personalright {
+  width: 50%;
+}
+
+.resume {
+}
+
+/* -----------------------SKILLS---------------------------- */
+.blue .rightcontent {
+  padding-top: 0;
+}
+
+.skills .leftcontent p {
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  width: 95%;
+}
+
+.skills-container {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.bars {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+}
+
+.word {
+  width: 75%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.html {
+  width: 40%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.css {
+  width: 30%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.javascript {
+  width: 25%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.react {
+  width: 25%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.redux {
+  width: 25%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.nextjs {
+  width: 25%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.cplus {
+  width: 20%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.leadership {
+  width: 70%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.communication {
+  width: 75%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.solve {
+  width: 75%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+/* -----------------------Projects---------------------------- */
+
+.whiteproject {
+  padding: 5% 10%;
+}
+.projects {
+  width: 100%;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.projects .titleportion {
+  height: 100px;
+}
+
+/* .app {
+  align-items: left;
+  border: solid #fb5283;
+  border-radius: 20px;
+  overflow: hidden;
+} */
+
+.each {
+  width: 350px;
+  height: 270px;
+  margin-bottom: 15px;
+}
+
+.description {
+  width: 35vh;
+  margin: auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 0;
+  list-style-type: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button a:hover {
+  text-decoration: none;
+}
+
+.button a span {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e3872d;
+  font-weight: 600;
+  font-family: "Montserrat";
+  padding: 12px 35px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.button a::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  height: 100%;
+  left: -25%;
+  width: 0%;
+  background-color: #041230;
+  transform: skew(50deg);
+  transition-duration: 0.7s;
+  z-index: 1;
+}
+
+.button a:hover::before {
+  width: 180%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .navigation {
+    display: none;
+  }
+  .parallax {
+    left: 0;
+  }
+  .parallaxinner {
+    width: 100%;
+  }
+  .titleportion {
+    font-size: 2rem;
+  }
+  .maincontent {
+    left: 0;
+    width: 100%;
+  }
+  .projects .titleportion {
+    height: 100%;
+  }
+  .each {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 270px;
+    margin-bottom: 15px;
+  }
+}
